@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang "en">
+	<head>
+		<br /> <br / > 
+		
+		<link rel="stylesheet" href="Calculator.css" />
+		<title> CourSys - Formula Tester </title>
+		
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel = "icon" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/SFU-block-logo.svg/1280px-SFU-block-logo.svg.png" type = "image/x-icon">
+	</head>
+	
+	<body>
+	
+		
+		<div class="body-part" > </div>
+		
+		<div id="main-body" > 
+		
+		<h1>&nbsp &nbsp &nbsp Grade Calculator</h1>
+			
+		
+		<form>
+			
+			<h2>Activities</h2>
+			<p>Give grades to the numeric activies</p>
+	
+			<table>
+			
+			<tr>
+					<th>Name</th>
+					<th>Short Name</th> 
+					<th>Weight</th>
+					<th>Grade</th>
+					<th>Percent </th>
+			</tr>
+			
+			<tr>
+					<td>Activity 1</td>
+					<td>A1</td>
+					<td> <input type="number" id="w1"> </td> 
+					<td> <input type="number" id="top1" onchange="myPercentage1()"> / <input type ="number" id="bottom1" onchange = "myPercentage1()" > </td>
+					<td id = "show_p1" > </td>
+			</tr>
+			
+			<tr>
+					<td>Activity 2</td>
+					<td>A2</td>
+					<td> <input type="number" id="w2"> </td> 
+					<td> <input type="number" id="top2" onchange="myPercentage2()"> / <input type ="number" id="bottom2" onchange = "myPercentage2()" > </td>
+					<td id = "show_p2" > </td>
+			</tr>
+			
+			<tr>
+					<td>Activity 3</td>
+					<td>A3</td>
+					<td> <input type="number" id="w3"> </td> 
+					<td> <input type="number" id="top3" onchange="myPercentage3()"> / <input type ="number" id="bottom3" onchange = "myPercentage3()" > </td>
+					<td id = "show_p3" > </td>
+			</tr>
+			
+			<tr>
+					<td>Activity 4</td>
+					<td>A4</td>
+					<td> <input type="number" id="w4"> </td> 
+					<td> <input type="number" id="top4" onchange="myPercentage4()"> / <input type ="number" id="bottom4" onchange = "myPercentage4()" > </td>
+					<td id = "show_p4" > </td>
+			</tr>
+			
+			
+			</table>
+			
+			<h2> Result </h2>
+			<p id = "calculated_result" > </p>
+			
+			<div class = "buttons">
+			
+				<p>
+					<button onclick="myWeight()">WEIGHTED</button>
+					<button onclick="myMean()">MEAN</button>
+				</p>
+			
+			</div>
+			
+		</form>
+		
+		</div>
+		
+		<div class = "body-part" ></div>
+		
+	<script src = "Calculator.js"> </script>
+		
+	</body>
+	
+</html>
